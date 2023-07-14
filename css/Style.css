@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: beige;
+}
+header{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #811d10;
+    text-align: center;
+}
+nav{
+    
+    font-size: 20px;
+    background-color: #f5f5c9;
+    box-sizing: border-box;
+    margin-inline-start: 33%;
+    border: 5px dashed #811d10;
+    border-radius: 15px;
+}
+main{
+    background-color: #2da1e4;
+    box-sizing: border-box;
+    padding:15px;
+    border: 5px dashed #09128f;
+    border-radius: 15px;
+    text-align: center;
+}
+/* selector por el elemento*/
+footer{
+    background: #f1bcbc;
+}
+/*selector por clases*/
+.boton{
+    display: inline-block;
+    font-size: 20px;
+    background-color: #af2d1c;
+    box-sizing: content-box;
+    padding:18px;
+    margin-inline: 50%;
+    border: 5px solid #811d10;
+    border-radius: 15px;
+}
+
+titulo{
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    border-color: aqua greenyellow indianred;
+    border-width: 1vw 1.5vw;
+    border-style: ridge dashed;
+    margin: 0.3vw;
+    float:left;
+}
+.p5{
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    font-size: 2vw;
+    border: 51x solid #000);
+/*selector por id*/
+#selectorId{
+    color:rgb(0, 225, 255);
+}
