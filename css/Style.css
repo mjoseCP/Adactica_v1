@@ -12,19 +12,49 @@ header{
     text-align: center;
 }
 nav{
-    
-    font-size: 20px;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
     background-color: #f5f5c9;
-    box-sizing: border-box;
-    margin-inline-start: 33%;
-    border: 5px dashed #811d10;
-    border-radius: 15px;
+    border-color: aqua greenyellow indianred;
+    border-width: 1vw 1.5vw;
+    border-style: ridge dashed;
+    margin: 0.3vw;
+    float:center;
+    }
+ul.menu {
+    background: #5cc77b;
+    border-radius: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul.menu li{
+    float: left;
+    width: 20%;
+}
+ul.menu li a{
+    border-right: 7px dashed greenyellow;
+    color:#d04835;
+    display: block;
+    padding: .3em;
+    text-decoration: none;
 }
 main{
-    background-color: #2da1e4;
+    background-color: #00ffff;
     box-sizing: border-box;
     padding:15px;
     border: 5px dashed #09128f;
+    border-radius: 15px;
+    text-align: center;
+}
+.section{
+    width: 100px;
+    height: 100px;
+    background-color: #6be9f1;
+    /*box-sizing: border-box;*/
+    padding:15px;
+    border: 5px dashed #379792;
     border-radius: 15px;
     text-align: center;
 }
@@ -35,29 +65,27 @@ footer{
 /*selector por clases*/
 .boton{
     display: inline-block;
-    font-size: 20px;
-    background-color: #af2d1c;
+    font-size: 0.9rem;
+    background-color: #5cc77b;
     box-sizing: content-box;
-    padding:18px;
+    padding:10px;
     margin-inline: 50%;
-    border: 5px solid #811d10;
-    border-radius: 15px;
-}
-
-titulo{
-    text-align: center;
-    font-family: 'Lobster Two', cursive;
     border-color: aqua greenyellow indianred;
-    border-width: 1vw 1.5vw;
-    border-style: ridge dashed;
-    margin: 0.3vw;
-    float:left;
+    border-radius: 15px;
+    }
+.lectura{
+    background-color: #bbeeff;
+    /*box-sizing: border-box;*/
+    padding:15px;
+    border: 5px dashed #379792;
+    border-radius: 15px;
+    text-align: center;
 }
 .p5{
     text-align: center;
     font-family: 'Lobster Two', cursive;
     font-size: 2vw;
-    border: 51x solid #000);
+    border: 5px double #379792;
 /*selector por id*/
 #selectorId{
     color:rgb(0, 225, 255);
