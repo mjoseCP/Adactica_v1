@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e04f36b4.css",
+    "main.js": "/static/js/main.9eeeb9a7.js",
+    "static/media/Jocs.gif": "/static/media/Jocs.c3eec8fd8cf705e36cf4.gif",
+    "static/media/Numy.gif": "/static/media/Numy.fe99270bc61812455f3c.gif",
+    "static/media/Lecty.gif": "/static/media/Lecty.aed6cf6ee98b4cdbddbc.gif",
+    "static/media/dib_Adactica.gif": "/static/media/dib_Adactica.1fda72cd708b132f3898.gif",
+    "static/media/vocales_2.png": "/static/media/vocales_2.3736e2a1eedf7c6aa2f7.png",
+    "static/media/Vocal_d.png": "/static/media/Vocal_d.f28c3a5d5819cfa444ae.png",
+    "static/media/tren.gif": "/static/media/tren.519fe1ff220355e47900.gif",
+    "static/media/Logo_adactica_Tr.png": "/static/media/Logo_adactica_Tr.9a9c269a4b83a3756b47.png",
+    "index.html": "/index.html",
+    "main.e04f36b4.css.map": "/static/css/main.e04f36b4.css.map",
+    "main.9eeeb9a7.js.map": "/static/js/main.9eeeb9a7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e04f36b4.css",
+    "static/js/main.9eeeb9a7.js"
+  ]
+}
