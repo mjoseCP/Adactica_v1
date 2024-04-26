@@ -21,3 +21,12 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# assets
+Logo_adactica_Tr.png
+
+# images
+/imagenes
+
+# Componentes
+/Componentes

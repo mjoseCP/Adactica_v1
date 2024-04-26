@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+  background-color: #EFE9E8;
+}
+
+.App-logo {
+  
+  pointer-events: none;
+  background-color: #EFE9E8;
+  width: 20vmin;
+  height: 15vmin;
+}
+
+.App-logoDiv{
+  width: 25vmin;
+  height: 25vmin;
+}
+
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+.App-header {
+  background-color: #EFE9E8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5px + 2vmin);
+  color: black;
+  font-family: 'Lobster Two', cursive;
+}
+.App-div {
+  background-color: #EFE9E8;
+  box-sizing: border-box;
+    padding:15px;
+    border: 3.5px solid #F0672E;
+    border-color: #642FFA #adff2f #F0672E;
+    border-radius: 15px;
+    padding: auto;
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Opcuadros{
+  display:table;
+  flex-direction: row;
+
+  box-sizing: border-box;
+  padding:15px;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  background-color: #EFE9E8;
+  background:#36E3B2;
+  border-color: #642FFA #FAF32F #F0672E;
+  margin-block: 10px;
+  border-radius: 8px 3px;
+   /* justify-content:space;  */
+}
+.Opcuadros div{
+  /* width: 15rem;
+  /*height: 20rem; 
+  background-color: #36e3b2;
+  border: 1px solid #642FFA;
+  font-size: 0.9rem;
+  text-align: center;
+  border-color: #642FFA #FAF32F #F0672E;
+  border-radius: 8px 3px;
+  margin: 15px; /* "margin: 15px;" lo quito para separar autmaticamtne con justify-content:space*/
+  gap: 30px;
+} */
+
+.colors{
+  /* display:flexbox; */
+  flex-direction: row;
+  width: 15vmin;
+  height: 25vmin;
+}
