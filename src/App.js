@@ -23,6 +23,7 @@ import AdivColor from './Navegador/Juegos/Colores.jsx';
 import Eltren from './Navegador/Leemos/Eltren.jsx';
 import Vocal from './Navegador/Leemos/Vocal.jsx';
 import Silabas from './Navegador/Leemos/Silabas.jsx';
+import Unodiez from './Navegador/Numeros/Unodiez.jsx';
 import Suma from './Navegador/Numeros/Suma.jsx';
 
 
@@ -53,6 +54,7 @@ function App() {
         <Route path='/Vocal' element={ <Vocal />}></Route>
         <Route path='/Silabas' element={ <Silabas />}></Route>
         <Route path='/ElTren' element={ <Eltren />}></Route>
+        <Route path='/Unodiez' element={ <Unodiez />}></Route>
         <Route path='/Suma' element={ <Suma />}></Route>
         
         

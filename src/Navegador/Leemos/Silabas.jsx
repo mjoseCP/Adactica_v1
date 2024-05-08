@@ -1,18 +1,18 @@
 import logoDib from '../../imagenes/MiCopyR/dib_Adactica.gif';
 import logo from '../../assets/Logo_adactica_Tr.png';
 import '../../css/App.css';
+
 import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Collapse from 'react-bootstrap/Collapse';
+
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavLink from 'react-bootstrap/NavLink';
 import { Link} from 'react-router-dom';
-
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Collapse from 'react-bootstrap/Collapse';
-
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
@@ -31,6 +31,7 @@ function CustomToggle({ children, eventKey }) {
     return (
       <button
       type="button"
+      // style={{ backgroundColor: 'green' }}
       onClick={decoratedOnClick}
     >
       {children}
@@ -52,9 +53,9 @@ function Silabas() {
     <div className="App-div"> 
         <p>Toca unir las vocales con las consonantes, y vamos a formar las sílabas, ya nos acercamoas para poder hacer nuestras primeras palabras</p> 
     </div>
-    
-      <Navletras />
-
+    <Col sm={4} className="App">
+                <Navletras />
+    </Col>
     <Container >
         <Row >
             <Col xs={14} className="App">
@@ -67,13 +68,21 @@ function Silabas() {
       <p>Sílabas </p>
     <Container>
       <Row>
-      <Col sm={4} md={3} className="App">
+      <Col xm={8} className="App">
       <Card>
         <Accordion defaultActiveKey="0">
           <Card className="Opcuadros"> 
             <Card.Header>
-              <Card.Body className="Opcuadros">B </Card.Body>
+              <div className="App-div"> 
+                {/* <Card.Body className="Opcuadros">B</Card.Body> */}
+                <CustomToggle className="Opcuadros" eventKey="0">B</CustomToggle>
+                <Accordion.Collapse  eventKey="0">             
+                <p className="App-div">La letra b (be) es la primera consonante. Ocupa el segundo lugar en el abecedario, justo después de la vocal a y antes de la letra C. Vamos a  aprender la B, tienes que juntar los labios para poder decirla. 
+                Aprendamos palabras que empiezan por B, así como las diferentes sílabas que podemos formar: b + vocal (ba, be, bi, bo, bu), b + r + vocal (bra, bre, bri, bro, bru) y b + l + vocal (bla, ble, bli, blo, blu).</p> 
+                </Accordion.Collapse>
+              </div>
             </Card.Header>
+            <div xm={4} className="Opcuadros"> 
               <CustomToggle eventKey="1">ba</CustomToggle>
               <Accordion.Collapse eventKey="1">
                 <Card.Body>barba, Basilio, barco, batido</Card.Body>
@@ -100,8 +109,39 @@ function Silabas() {
               <Accordion.Collapse eventKey="5">
                 <Card.Body>buena, burro</Card.Body>
             </Accordion.Collapse>
+            </div>
+            --------br------
+            <div xm={4} className="Opcuadros"> 
+              <CustomToggle eventKey="1">bra</CustomToggle>
+              <Accordion.Collapse eventKey="1">
+                <Card.Body>brazo, bravo</Card.Body>
+            </Accordion.Collapse>
+            <Card.Header>
+              <CustomToggle eventKey="2">bre</CustomToggle>
+            </Card.Header>
+              <Accordion.Collapse eventKey="2">
+                <Card.Body>brecha</Card.Body>
+              </Accordion.Collapse>
+            <Card.Header>
+              <CustomToggle eventKey="3">bri</CustomToggle>
+            </Card.Header>
+              <Accordion.Collapse eventKey="3">
+                <Card.Body>brindar, brillante</Card.Body>
+              </Accordion.Collapse>  
+            <Card.Header>
+              <CustomToggle eventKey="4">bro</CustomToggle>
+            </Card.Header>
+            <Accordion.Collapse eventKey="4">
+              <Card.Body>broma</Card.Body>
+            </Accordion.Collapse>    
+            <CustomToggle eventKey="5">bru</CustomToggle>
+              <Accordion.Collapse eventKey="5">
+                <Card.Body>bruto</Card.Body>
+            </Accordion.Collapse>
+            </div>
           </Card>
       </Accordion>
+      
     </Card>
     </Col>
     <Col sm={1} md={1} className="App">
@@ -109,7 +149,7 @@ function Silabas() {
         <Accordion defaultActiveKey="0">
           <Card className="Opcuadros"> 
             <Card.Header>
-              <Card.Body className="Opcuadros">C </Card.Body>
+              <Card.Body className="Opcuadros">C</Card.Body>
             </Card.Header>
               <CustomToggle eventKey="1">ca</CustomToggle>
               <Accordion.Collapse eventKey="1">
@@ -144,10 +184,12 @@ function Silabas() {
     </Row>
     </Container>
     </Container>  
+
     </>
     </header>
     );
 }
+
 const Navletras = () =>{
   return (
     

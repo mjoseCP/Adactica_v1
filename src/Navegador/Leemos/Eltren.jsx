@@ -2,11 +2,6 @@ import logoDib from '../../imagenes/MiCopyR/dib_Adactica.gif';
 import logo from '../../assets/Logo_adactica_Tr.png';
 import '../../css/App.css';
 
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavLink from 'react-bootstrap/NavLink';
-import { Link} from 'react-router-dom';
-
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
@@ -39,9 +34,6 @@ for (let number = 1; number <= 5; number++) {
         alt="Cara de niña Lety"
         />
     <>
-    <Col xs={8} className="App">
-      <Navletras />
-    </Col>
     <div className="App-div"> 
         <h1>El tren</h1>
         <h2>haz lo que va contando</h2>
@@ -91,30 +83,6 @@ Así que Sam sin saber bien que hacer, coge un lápiz sin mirar, resulta que es 
 
 </div>
 
-  );
-}
-const Navletras = () =>{
-  return (
-    
-      <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-      <Image style={{ width: '4rem' }} src={Lecty} rounded />
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Brand href="#home">elige opcion</Navbar.Brand>
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <NavLink>
-            <Link to='/Vocal'>Vocales </Link>
-            <Link to='/Silabas'>Silabas </Link>
-            </NavLink>
-            <NavLink>
-            <Link to='/Eltren'>El tren </Link>
-            </NavLink>
-          </Nav>
-          
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
   );
 }
 

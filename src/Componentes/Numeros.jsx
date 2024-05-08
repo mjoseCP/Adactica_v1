@@ -99,8 +99,7 @@ const Navletras = () =>{
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
             <NavLink>
-            <Link to='/AdivColor'>Colores 
-            <Image style={{ width: '2rem' }} src={Linicio} rounded /></Link>
+            <Link to='/Unodiez'>numeros </Link>
             </NavLink>
             <NavLink>
             <Link to='/Suma'>Suma</Link>

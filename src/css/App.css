@@ -79,12 +79,22 @@
   margin-block: 10px;
   border-radius: 8px 3px;
    /* justify-content:space;  */
-   gap: 30px;
 }
- \
+.Opcuadros div{
+  /* width: 15rem;
+  /*height: 20rem; 
+  background-color: #36e3b2;
+  border: 1px solid #642FFA;
+  font-size: 0.9rem;
+  text-align: center;
+  border-color: #642FFA #FAF32F #F0672E;
+  border-radius: 8px 3px;
+  margin: 15px; /* "margin: 15px;" lo quito para separar autmaticamtne con justify-content:space*/
+  gap: 30px;
+} */
 
 .colors{
-
+  /* display:flexbox; */
   flex-direction: row;
   width: 15vmin;
   height: 25vmin;

@@ -25,8 +25,15 @@ import Numeros from '../../imagenes/Numeros/numeros.png';
 import Juegos from '../../imagenes/Juegos/Inc_juegos.png';
 import Lecty from '../../imagenes/MiCopyR/Lecty.gif';
 
+import A from '../../imagenes/Letras/vocales/A.png';
+import E from '../../imagenes/Letras/vocales/E.png';
+import I from '../../imagenes/Letras/vocales/I.png';
+import O from '../../imagenes/Letras/vocales/O.png';
+import U from '../../imagenes/Letras/vocales/O (2).png';
 import Vocal_d from '../../imagenes/Letras/Vocal_d.png';
 import vocales_2 from '../../imagenes/Letras/vocales_2.png';
+
+
 
 function Vocal() {
   const [open, setOpen] = useState(false);
@@ -42,13 +49,12 @@ return (
     
     <Container className="App">
     <div className="App-div"> 
-      <p>Vamos a comenzar conociendo las vocales, son 5 esencial para comenzar la gran aventura de las lecutras,
+      <p>Vamos a comenzar conociendo las vocales, son 5 esencial para comenzar la gran aventura de las lecturas,
         así que enseñemos lo esencial</p> 
     </div>
-    <Col xs={8} className="App">
-      <Navletras />
-    </Col>
-            
+    <Col sm={4} className="App">
+                <Navletras />
+            </Col>
     <Figure>
       <Figure.Caption>
         Conoce las vocales en mayúscula y minúscula
@@ -80,6 +86,12 @@ return (
         Ana, árbol, amiga, Arturo
         </Accordion.Body>
       </Accordion.Item>
+      <Figure.Image 
+        width={250}
+        height={400}
+        alt="Los números"
+        src={A}
+      />
       </div>
       <div className='Opcuadros'>
       <Accordion.Item eventKey="1">
@@ -87,6 +99,12 @@ return (
         <Accordion.Body>
         Eva, elefante, estrella
         </Accordion.Body>
+        <Figure.Image 
+        width={250}
+        height={400}
+        alt="Los números"
+        src={E}
+      />
       </Accordion.Item>
       </div>
     <div className='Opcuadros'>
@@ -96,6 +114,12 @@ return (
         Irene, iglú, iglesia, Ivan
         </Accordion.Body>
       </Accordion.Item>
+      <Figure.Image 
+        width={250}
+        height={400}
+        alt="Los números"
+        src={I}
+      />
       </div>
      <div className='Opcuadros'>
       <Accordion.Item eventKey="3">
@@ -104,6 +128,12 @@ return (
         Oscar, ojo, oso, Olga
         </Accordion.Body>
       </Accordion.Item>
+      <Figure.Image 
+        width={250}
+        height={400}
+        alt="Los números"
+        src={O}
+      />
       </div>
       <div className='Opcuadros'>
       <Accordion.Item eventKey="4">
@@ -112,8 +142,14 @@ return (
         Úrsula, uña
         </Accordion.Body>
       </Accordion.Item>
+      <Figure.Image 
+        width={250}
+        height={400}
+        alt="Los números"
+        src={U}
+      />
       </div>
-      <Accordion.Item eventKey="4" className='Opcuadros'>
+      {/* <Accordion.Item eventKey="4" className='Opcuadros'>
       <Button className='Opcuadros'
         onClick={() => setOpen(!open)}
         aria-controls="example-collapse-text"
@@ -139,7 +175,7 @@ return (
       >
       U / u
       </Button>
-      </Accordion.Item>
+      </Accordion.Item> */}
       <div>
         <Collapse in={open} dimension="width">
           <div>
@@ -164,8 +200,21 @@ return (
         alt="las vocales"
         src={Vocal_d}
       />
-    </Figure>              
-    </Col> 
+    </Figure>
+              {/* <div style={{ width: '1000', height: '600' }}>
+      <Ratio aspectRatio={'1x1'}>
+        <embed type="image/svg+xml" src={Vocal_d} />
+      </Ratio>
+    </div>  */}      
+    </Col>
+    {/* <Col sm={4} className="App">
+    <img 
+            src={vocales_2}
+            className="App-logoDiv" 
+            alt="dibujo de tren con formas"
+            />
+              
+            </Col> */}
     </Row>
     </Container>
     <Row> 
