@@ -94,7 +94,7 @@ main{
 
 ul, ol {
     list-style: none;
-    /*quita marca de línea*/
+    /* marca de línea*/
 }
 
 /*.sectop>li { revisar 
@@ -147,9 +147,9 @@ li ul li ul {
     border-radius: 8px 3px;
 }
 .Opcuadros div{
-    width: 100px;
-    height: 100px;
-    background-color: #36E3B2;
+    width: 200px;
+    height: 200px;
+    background-color: #36e3b2;
     border: 1px solid #642FFA;
     font-size: 0.9rem;
     text-align: center;
